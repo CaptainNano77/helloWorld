@@ -3,41 +3,48 @@
 
 <style>
 .heading_top {
-    color:olivedrab;
-    background-color: darkblue;
-    border: 6px solid olivedrab;
+    color: #efffff;
+    background-color: #444444;
+    border: 3px solid white;
     border-radius: 10px;
     margin: 1px;
-    /* padding: 10px 30px 10px 30px; */
     text-align: center;
     position: relative;
 }
 
+.link_heading {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    margin-top: 0px;
+}
+
 .top_left_image {
-    width: 165px;
+    width: 120px;
     border-color: darkblue;
     border: 2px solid white;
     border-radius: 10px;
     position: absolute;
-    top: 5px;
-    left:5px;
+    left: 15px;
+    top: 15px;
+    /* top: 5px;
+    left:5px; */
 }
 
 .microscopy_image {
     width: 350px;
     border-color: darkblue;
-    border: 2px solid olivedrab;
+    border: 2px solid blue;
     border-radius: 10px;
     margin-top: 12px;
     left: 5px;
-    /* position=absolute; */
 }
 
 .gluScatter_image {
     width: 350px;
     background-color: white;
     border-color: darkblue;
-    border: 2px solid olivedrab;
+    border: 2px solid blue;
     border-radius: 10px;
     margin-top: 5px;
     left: 5px;
@@ -48,7 +55,7 @@
     width: 350px;
     background-color: white;
     border-color: darkblue;
-    border: 2px solid olivedrab;
+    border: 2px solid blue;
     border-radius: 10px;
     margin-top: 5px;
     left: 5px;
@@ -59,7 +66,7 @@
     width: 350px;
     background-color: white;
     border-color: darkblue;
-    border: 2px solid olivedrab;
+    border: 2px solid blue;
     border-radius: 10px;
     margin-top: 5px;
     left: 5px;
@@ -74,7 +81,7 @@
     margin-left: 370px;
     margin-top: -688px;
     /* right: 400px; */
-    border: 2px solid olivedrab;
+    border: 2px solid white;
     border-radius: 10px;
 }
 
@@ -84,13 +91,9 @@
     top: 1000px;
     right:400px; */
     margin-left: 370px;
-    border: 2px solid olivedrab;
+    border: 2px solid white;
     border-radius: 10px;
 }
-/* /*.content {
-  max-width: 800px;
-  margin: auto;
-}*/
 
 .centered {
     position:absolute;
@@ -101,8 +104,9 @@
 
 h2 {
     display: inline-block;
-    font-size: 35px;
+    font-size: 30px;
     font-family: -apple-system;
+    text-shadow: 2px 2px darkblue;
 }
 
 body {
@@ -110,78 +114,20 @@ body {
     margin: auto;
 }
 
-#linkedin a {
-    color: darkblue;
-    font-size: 30px;
-    position: center;
+.link{
+    font-family: -apple-system;
     text-decoration: none;
+    color: white;
+    font-size: 25px;
+    text-shadow: 2px 2px #c10000;
+    text-shadow: 1px 1px blue;
 }
 
-#research-gate a {
-    color: darkblue;
+.link a {
     font-size: 30px;
-    position: center;
-    text-decoration: none;
+    /* position: center; */
+    text-decoration: none; 
 }
-
-#git-hub a {
-    color: darkblue;
-    font-size: 30px;
-    position: center;
-    text-decoration: none;
-}
-
-#publications a {
-    color: darkblue;
-    font-size: 30px;
-    position: center;
-    text-decoration: none;
-}
-
-#linkedin {
-    background-color: gray;
-    border: 3px solid olivedrab;
-    font-family: BlinkMacSystemFont;
-    border-radius: 10px;
-    margin-left: 1px;
-    margin-right: 1200px;
-    margin-top: 10px;
-    text-align: center;
-}
-
-#research-gate {
-    background-color: gray;
-    border: 3px solid olivedrab;
-    font-family:BlinkMacSystemFont;
-    border-radius: 10px;
-    margin-left: 240px;
-    margin-right: 960px;
-    margin-top: -41px;
-    text-align: center;
-}
-
-#git-hub {
-    background-color: gray;
-    border: 3px solid olivedrab;
-    font-family: BlinkMacSystemFont;
-    border-radius: 10px;
-    margin-left: 480px;
-    margin-right: 720px;
-    margin-top: -41px;
-    text-align: center;
-}
-
-#publications {
-    background-color: gray;
-    border: 3px solid olivedrab;
-    font-family: BlinkMacSystemFont;
-    border-radius: 10px;
-    margin-left: 720px;
-    margin-right: 480px;
-    margin-top: -41px;
-    text-align: center;
-}
-
 </style>
 
 <head>
@@ -201,9 +147,15 @@ body {
 
 </div>
 
+<div class="link_heading">
+        <a class="link" href="index.html">Home</a>
+        <a class="link" href="https://www.linkedin.com/in/robert-m-taylor-ph-d-7a37b813/" target="new">Linkedin</a> 
+        <a class="link" href="https://github.com/CaptainNano77" target="new">github</a>
+        <a class="link" href="https://www.researchgate.net/profile/Robert_Taylor13#" target="new">ResearchGate</a>
+        <a class="link" href="publications.html" target="new">Publications</a>
+</div>
 
-
-<div id="linkedin">
+<!-- <div id="linkedin">
         <a href="https://www.linkedin.com/in/robert-m-taylor-ph-d-7a37b813/" target="new">Linkedin</a>
 </div>
 
@@ -217,7 +169,7 @@ body {
 
 <div id="publications">
     <a href="publications.html" target="new">Publications</a>
-</div>
+</div> -->
 
 <!-- IMAGES -->
 <div>
