@@ -16,7 +16,7 @@
     display: flex;
     justify-content: space-around;
     background-color: black;
-    margin-top: 0px;
+    margin-top: 5px;
 }
 
 .top_left_image {
@@ -27,60 +27,12 @@
     position: absolute;
     left: 15px;
     top: 15px;
-    /* top: 5px;
-    left:5px; */
 }
-
-/* .microscopy_image {
-    width: 350px;
-    border-color: darkblue;
-    border: 2px solid blue;
-    border-radius: 10px;
-    margin-top: 12px;
-    left: 5px;
-}
-
-.gluScatter_image {
-    width: 350px;
-    background-color: white;
-    border-color: darkblue;
-    border: 2px solid blue;
-    border-radius: 10px;
-    margin-top: 5px;
-    left: 5px;
-    position:relative;
-}
-
-.venn_image {
-    width: 350px;
-    background-color: white;
-    border-color: darkblue;
-    border: 2px solid blue;
-    border-radius: 10px;
-    margin-top: 5px;
-    left: 5px;
-    position=absolute;
-}
-
-.exosome_image {
-    width: 350px;
-    background-color: white;
-    border-color: darkblue;
-    border: 2px solid blue;
-    border-radius: 10px;
-    margin-top: 5px;
-    left: 5px;
-    position=absolute;
-} */
 
 .pub_image {
     max-width:600px;
-    /* margin: 1px; */
-    /* position: absolute; */
-    /* top:200px; */
     margin-left: 370px;
     margin-top:40px;
-    /* right: 400px; */
     border: 2px solid white;
     border-radius: 10px;
     background-color: white;
@@ -116,9 +68,33 @@ body {
 
 .link a {
     font-size: 30px;
-    /* position: center; */
     text-decoration: none; 
 }
+
+.paper_link {
+    font-family: -apple-system;
+    color: #85929E;
+    font-size: 25px;
+}
+
+.text {
+    font-family: -apple-system;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    text-shadow: 2px 2px #c10000;
+    text-shadow: 1px 1px blue;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+
+}
+
+.special_word {
+    color: #27AE60;
+}
+
 </style>
 
 <head>
@@ -131,7 +107,6 @@ body {
     alt="Picture of Dr. Taylor">
 
     <h2>
-        <!-- Robert M. Taylor, PhD<br/>  -->
         📚  PUBLICATIONS  📚<br/>
         <br/>
         Robert M. Taylor, PhD<br/> 
@@ -147,9 +122,37 @@ body {
         <a class="link" href="publications_page.html" target="new">Publications</a>
 </div>
 
-<div>
+<div class="text">
 
-    <img class="pub_image" src="images/PUBLICATIONS.pdf" alt="publications">
+    <p>
+     📚  PUBLICATIONS  📚
+    </p>
+
+    <p><span class="special_word">Robert M. Taylor</span>, Dilendra Maharjan, Fernando Moreu, and Justin T Baca. <a class="paper_link" href="https://link.springer.com/content/pdf/10.1007/s00542-020-04758-0.pdf" target="new">Parametric Study of 3D Printed Microneedle (MN) Holders for Interstitial Fluid (ISF) Extraction.</a> Microsystem Technologies. https://doi.org/10.1007/s00542-020-04758-0 (2020).
+    </p>
+    <p>Philip R Miller#, <span class="special_word">Robert M. Taylor#</span>, Bao Tran, Trevor Glaros, Victor H Chavez, Raga Krishnakumar, Anupama Sinha, Kunal Poorey, Kelly P. Williams, Steven S. Branda, Justin T. Baca, and Ronen Polsky. <a class="paper_link" href="publications/CommBio_2019.pdf" target="new">Extraction and biomolecular analysis of dermal interstitial fluid collected with hollow microneedles.</a> Communications Biology 1, 173 (2018).<br>
+    </p>
+    <p><span class="special_word">Robert M. Taylor</span>, Philip R Miller, Parwana Ebrahimi, Ronen Polsky, and Justin T. Baca. <a class="paper_link" href="publications/Taylor_LabAnimals_2018.pdf" target="new">Minimally-Invasive Microneedle Array-Extraction of Interstitial Fluid for Comprehensive Biomedical Applications Including Transcriptomics, Proteomics, Metabolomics, Exosome Research, and Biomarker Identification.</a> Laboratory Animals. (2018)
+    </p>
+    <p>Bao Quoc Tran, Philip Miller, <span class="special_word">Robert M. Taylor</span>, Gabrielle Boyd, C. Nicole Rosenzweig, Justin T. Baca, Ronen Polsky, and Trevor Glaros. <a class="paper_link" href="publications/Tran_JProteomeRes_2018.pdf" target="new">Proteomic Characterization of Dermal Interstitial Fluid Extracted Using a Novel Microneedle-Assisted Technique.</a> Journal of Proteome Research. 17(1). (2017). <br>
+    </p>
+    <p>Joseph M. Pomo, <span class="special_word">Robert M. Taylor</span>, and Rama R. Gullapalli. Culturing 3-D <a class="paper_link" href="publications/Pomo_CancerCellInt_2016.pdf" target="new">Hepatocellular Cancer Spheroids to Analyze Cancer Cell Growth Mechanics. Cancer Cell International.</a> 16:44 (2016) <br>
+    </p> 
+    <p> <span class="special_word">Robert M. Taylor</span>, Todd C. Monson, and Rama R. Gullapalli. <a class="paper_link" href="publications/Taylor_NanoResLetter_2014.pdf" target="new">Influence of carbon chain length on the synthesis and yield of fatty amine-coated iron-platinum nanoparticles.</a> Nanoscale Research Letters. 9 (2014) 306. <br>
+    </p>
+    <p><span class="special_word">Robert M. Taylor</span> and Laurel O. Sillerud.  <a class="paper_link" href="publications/Taylor_IntJNanoMed_2012.pdf" target="new">Paclitaxel-loaded iron platinum stealth immunomicelles are potent magnetic resonance imaging agents that prevent prostate cancer growth in a PSMA-dependent manner.</a>  International Journal of Nanomedicine. 7 (2012) 4341-4352.
+    </p>
+    <p><span class="special_word">Robert M. Taylor</span>, Dale L. Huber, Todd C. Monson, Victor Esch, and Laurel O. Sillerud.  <a class="paper_link" href="publications/Taylor_JVSTB_2012.pdf" target="new">Structural and magnetic characterization of superparamagnetic iron platinum nanoparticle contrast agents for magnetic resonance imaging.</a>  Journal of Vacuum Science and Technology B.  32 (2011) 2C101-2C1016<br>
+    </p>
+    <p><span class="special_word">Robert M. Taylor</span>, Virginia Severns, David C. Brown, Marco Bisoffi, and Laurel O. Sillerud.  <a class="paper_link" href="publications/Taylor_Prostate_2011_Epub.pdf" target="new">Prostate cancer targeting motifs:  expression of ανβ3, Neutotensin Receptor 1, Prostate Specific Membrane Antigen, and Prostate Stem Cell Antigen in human prostate cancer cell lines and xenografts.</a>  The Prostate. 72 (2011) 523-532. <br>
+    </p>
+    <p><span class="special_word">Robert M. Taylor</span>, Dale L. Huber, Todd C. Monson, Abdul-Mehdi S. Ali, Marco Bisoffi, and Laurel O. Sillerud. <a class="paper_link" href="publications/Taylor_JNanoRes_2011.pdf" target="new">Multifunctional iron platinum stealth immunomicelles:  targeted detection of human prostate cancer cells using both fluorescence and magnetic resonance imaging.</a>  Journal of Nanoparticle Research. 13 (2011) 4717-4729.<br>
+    </p>
+    <p>Sébastien Brier, Giovanna Maria, Vincenzo Carginale, Antonio Capasso, Yan Wu, <span class="special_word">Robert M. Taylor</span>, Nicholas B. Borotto, Clemente Capasso, and John R. Engen.  <a class="paper_link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2533623/pdf/nihms54020.pdf" target="new">Purification and characterization of pepsins A1 and A2 from the Antarctic rock cod Trematomus bernacchii.</a>  FEBS Journal 274 (2007) 6152–6166. <br>
+    </p>
+    <br>
+    <p># These authors contributed equally to the work.</p>
+
 </div>
 
 </body>
