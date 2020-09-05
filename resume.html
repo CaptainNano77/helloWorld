@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;  
+    top: 32%;
+    min-width: 100%;
+    min-height: 100%; 
+}
+
+.box{
+        position: flex;
+        display: inline-block; /* Make the width of box same as image */
+    }
+    .box .text{
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 5%;
+        right: 0%;
+        top: 30%; /* Adjust this value to move the positioned div up and down */
+        /* text-align: center; */
+        width: 80%; /*Set the width of the positioned div */
+    }
+
+.heading_top {
+    color: #efffff;
+    background-color: #444444;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin: 1px;
+    text-align: center;
+    position: relative;
+}
+
+.link_heading {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    margin-top: 5px;
+}
+
+.top_left_image {
+    width: 120px;
+    border-color: darkblue;
+    border: 2px solid white;
+    border-radius: 10px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+.pub_image {
+    max-width:600px;
+    margin-left: 370px;
+    margin-top:40px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.centered {
+    position:absolute;
+    left:22%;
+    top:35%;
+    margin: 0 auto;
+} 
+
+h2 {
+    display: inline-block;
+    font-size: 30px;
+    font-family: -apple-system;
+    text-shadow: 2px 2px darkblue;
+}
+
+body {
+    background-color: black;
+    margin: auto;
+}
+
+.link {
+    font-family: -apple-system;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    text-shadow: 2px 2px #c10000;
+    text-shadow: 1px 1px blue;
+}
+
+.link a {
+    font-size: 30px;
+    text-decoration: none; 
+}
+
+.paper_link {
+    font-family: -apple-system;
+    color: #85929E;
+    font-size: 25px;
+}
+
+.text {
+    font-family: -apple-system;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    text-shadow: 2px 2px #c10000;
+    text-shadow: 1px 1px blue;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+
+}
+
+.special_word {
+    color: #27AE60;
+}
+
+</style>
+
+<head>
+    <!-- This is my first webpage! --> 
+</head>
+
+<body>
+<div class=heading_top>
+    <img class="top_left_image" src="images/46737856.png" 
+    alt="Picture of Dr. Taylor">
+
+    <h2 style="text-shadow: 2px 2px darkblue">
+        📝  RESUME  📝<br/>
+        <br/>
+        Robert M. Taylor, PhD<br/> 
+    </h2>
+
+</div>
+
+<div class="link_heading">
+        <a class="link" style="text-shadow: 2px 2px blue" href="index.html">Home</a>
+        <a class="link" style="text-shadow: 2px 2px blue" href="resume.html">Resume</a>
+        <a class="link" style="text-shadow: 2px 2px blue" href="https://www.linkedin.com/in/robert-m-taylor-ph-d-7a37b813/" target="new">Linkedin</a> 
+        <a class="link" style="text-shadow: 2px 2px blue" href="https://github.com/CaptainNano77" target="new">github</a>
+        <a class="link" style="text-shadow: 2px 2px blue" href="https://www.researchgate.net/profile/Robert_Taylor13#" target="new">ResearchGate</a>
+        <a class="link" style="text-shadow: 2px 2px blue" href="">Data</a>
+        <a class="link" style="text-shadow: 2px 2px blue" href="publications_page.html" target="new">Publications</a>
+</div>
+
+<div class="box">
+    <video autoplay muted loop id="myVideo">
+        <source src="lncap_1Z.mp4" type="video/mp4">
+    </video>
+
+    <div class="text">
+        <img style="max-width:90%" src="images/Resume_RMTaylor_200831_Page_1.jpg" alt="resume page1">
+    
+    <div class="text2">
+        <img style="max-width:90%" src="images/Resume_RMTaylor_200831_Page_2.jpg" alt="resume page2">
+    </div>
+</div>
+
+</body>
+</html>
