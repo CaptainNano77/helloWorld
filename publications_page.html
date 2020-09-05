@@ -2,6 +2,31 @@
 <html>
 
 <style>
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;  
+    top: 32%;
+    min-width: 100%;
+    min-height: 100%; 
+}
+
+.box{
+        position: flex;
+        display: inline-block; /* Make the width of box same as image */
+    }
+    .box .text{
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 5%;
+        right: 0%;
+        top: 30%; /* Adjust this value to move the positioned div up and down */
+        /* text-align: center; */
+        width: 80%; /*Set the width of the positioned div */
+    }
+
 .heading_top {
     color: #efffff;
     background-color: #444444;
@@ -122,36 +147,40 @@ body {
         <a class="link" href="publications_page.html" target="new">Publications</a>
 </div>
 
-<div class="text">
+<div class="box">
+    <video autoplay muted loop id="myVideo">
+        <source src="lncap_1Z.mp4" type="video/mp4">
+    </video>
 
-    <p>
-     📚  PUBLICATIONS  📚
-    </p>
+    <div class="text">
+        <p>
+         📚  PUBLICATIONS  📚
+        </p>
 
-    <p><span class="special_word">Robert M. Taylor</span>, Dilendra Maharjan, Fernando Moreu, and Justin T Baca. <a class="paper_link" href="https://link.springer.com/content/pdf/10.1007/s00542-020-04758-0.pdf" target="new">Parametric Study of 3D Printed Microneedle (MN) Holders for Interstitial Fluid (ISF) Extraction.</a> Microsystem Technologies. https://doi.org/10.1007/s00542-020-04758-0 (2020).
-    </p>
-    <p>Philip R Miller#, <span class="special_word">Robert M. Taylor#</span>, Bao Tran, Trevor Glaros, Victor H Chavez, Raga Krishnakumar, Anupama Sinha, Kunal Poorey, Kelly P. Williams, Steven S. Branda, Justin T. Baca, and Ronen Polsky. <a class="paper_link" href="publications/CommBio_2019.pdf" target="new">Extraction and biomolecular analysis of dermal interstitial fluid collected with hollow microneedles.</a> Communications Biology 1, 173 (2018).<br>
-    </p>
-    <p><span class="special_word">Robert M. Taylor</span>, Philip R Miller, Parwana Ebrahimi, Ronen Polsky, and Justin T. Baca. <a class="paper_link" href="publications/Taylor_LabAnimals_2018.pdf" target="new">Minimally-Invasive Microneedle Array-Extraction of Interstitial Fluid for Comprehensive Biomedical Applications Including Transcriptomics, Proteomics, Metabolomics, Exosome Research, and Biomarker Identification.</a> Laboratory Animals. (2018)
-    </p>
-    <p>Bao Quoc Tran, Philip Miller, <span class="special_word">Robert M. Taylor</span>, Gabrielle Boyd, C. Nicole Rosenzweig, Justin T. Baca, Ronen Polsky, and Trevor Glaros. <a class="paper_link" href="publications/Tran_JProteomeRes_2018.pdf" target="new">Proteomic Characterization of Dermal Interstitial Fluid Extracted Using a Novel Microneedle-Assisted Technique.</a> Journal of Proteome Research. 17(1). (2017). <br>
-    </p>
-    <p>Joseph M. Pomo, <span class="special_word">Robert M. Taylor</span>, and Rama R. Gullapalli. Culturing 3-D <a class="paper_link" href="publications/Pomo_CancerCellInt_2016.pdf" target="new">Hepatocellular Cancer Spheroids to Analyze Cancer Cell Growth Mechanics. Cancer Cell International.</a> 16:44 (2016) <br>
-    </p> 
-    <p> <span class="special_word">Robert M. Taylor</span>, Todd C. Monson, and Rama R. Gullapalli. <a class="paper_link" href="publications/Taylor_NanoResLetter_2014.pdf" target="new">Influence of carbon chain length on the synthesis and yield of fatty amine-coated iron-platinum nanoparticles.</a> Nanoscale Research Letters. 9 (2014) 306. <br>
-    </p>
-    <p><span class="special_word">Robert M. Taylor</span> and Laurel O. Sillerud.  <a class="paper_link" href="publications/Taylor_IntJNanoMed_2012.pdf" target="new">Paclitaxel-loaded iron platinum stealth immunomicelles are potent magnetic resonance imaging agents that prevent prostate cancer growth in a PSMA-dependent manner.</a>  International Journal of Nanomedicine. 7 (2012) 4341-4352.
-    </p>
-    <p><span class="special_word">Robert M. Taylor</span>, Dale L. Huber, Todd C. Monson, Victor Esch, and Laurel O. Sillerud.  <a class="paper_link" href="publications/Taylor_JVSTB_2012.pdf" target="new">Structural and magnetic characterization of superparamagnetic iron platinum nanoparticle contrast agents for magnetic resonance imaging.</a>  Journal of Vacuum Science and Technology B.  32 (2011) 2C101-2C1016<br>
-    </p>
-    <p><span class="special_word">Robert M. Taylor</span>, Virginia Severns, David C. Brown, Marco Bisoffi, and Laurel O. Sillerud.  <a class="paper_link" href="publications/Taylor_Prostate_2011_Epub.pdf" target="new">Prostate cancer targeting motifs:  expression of ανβ3, Neutotensin Receptor 1, Prostate Specific Membrane Antigen, and Prostate Stem Cell Antigen in human prostate cancer cell lines and xenografts.</a>  The Prostate. 72 (2011) 523-532. <br>
-    </p>
-    <p><span class="special_word">Robert M. Taylor</span>, Dale L. Huber, Todd C. Monson, Abdul-Mehdi S. Ali, Marco Bisoffi, and Laurel O. Sillerud. <a class="paper_link" href="publications/Taylor_JNanoRes_2011.pdf" target="new">Multifunctional iron platinum stealth immunomicelles:  targeted detection of human prostate cancer cells using both fluorescence and magnetic resonance imaging.</a>  Journal of Nanoparticle Research. 13 (2011) 4717-4729.<br>
-    </p>
-    <p>Sébastien Brier, Giovanna Maria, Vincenzo Carginale, Antonio Capasso, Yan Wu, <span class="special_word">Robert M. Taylor</span>, Nicholas B. Borotto, Clemente Capasso, and John R. Engen.  <a class="paper_link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2533623/pdf/nihms54020.pdf" target="new">Purification and characterization of pepsins A1 and A2 from the Antarctic rock cod Trematomus bernacchii.</a>  FEBS Journal 274 (2007) 6152–6166. <br>
-    </p>
-    <br>
-    <p># These authors contributed equally to the work.</p>
+         <p><span class="special_word">Robert M. Taylor</span>, Dilendra Maharjan, Fernando Moreu, and Justin T Baca. <a class="paper_link" href="https://link.springer.com/content/pdf/10.1007/s00542-020-04758-0.pdf" target="new">Parametric Study of 3D Printed Microneedle (MN) Holders for Interstitial Fluid (ISF) Extraction.</a> Microsystem Technologies. https://doi.org/10.1007/s00542-020-04758-0 (2020).
+         </p>
+         <p>Philip R Miller#, <span class="special_word">Robert M. Taylor#</span>, Bao Tran, Trevor Glaros, Victor H Chavez, Raga Krishnakumar, Anupama Sinha, Kunal Poorey, Kelly P. Williams, Steven S. Branda, Justin T. Baca, and Ronen Polsky. <a class="paper_link" href="publications/CommBio_2019.pdf" target="new">Extraction and biomolecular analysis of dermal interstitial fluid collected with hollow microneedles.</a> Communications Biology 1, 173 (2018).<br>
+        </p>
+        <p><span class="special_word">Robert M. Taylor</span>, Philip R Miller, Parwana Ebrahimi, Ronen Polsky, and Justin T. Baca. <a class="paper_link" href="publications/Taylor_LabAnimals_2018.pdf" target="new">Minimally-Invasive Microneedle Array-Extraction of Interstitial Fluid for Comprehensive Biomedical Applications Including Transcriptomics, Proteomics, Metabolomics, Exosome Research, and Biomarker Identification.</a> Laboratory Animals. (2018)
+        </p>
+        <p>Bao Quoc Tran, Philip Miller, <span class="special_word">Robert M. Taylor</span>, Gabrielle Boyd, C. Nicole Rosenzweig, Justin T. Baca, Ronen Polsky, and Trevor Glaros. <a class="paper_link" href="publications/Tran_JProteomeRes_2018.pdf" target="new">Proteomic Characterization of Dermal Interstitial Fluid Extracted Using a Novel Microneedle-Assisted Technique.</a> Journal of Proteome Research. 17(1). (2017). <br>
+        </p>
+        <p>Joseph M. Pomo, <span class="special_word">Robert M. Taylor</span>, and Rama R. Gullapalli. Culturing 3-D <a class="paper_link" href="publications/Pomo_CancerCellInt_2016.pdf" target="new">Hepatocellular Cancer Spheroids to Analyze Cancer Cell Growth Mechanics. Cancer Cell International.</a> 16:44 (2016) <br>
+        </p> 
+        <p> <span class="special_word">Robert M. Taylor</span>, Todd C. Monson, and Rama R. Gullapalli. <a class="paper_link" href="publications/Taylor_NanoResLetter_2014.pdf" target="new">Influence of carbon chain length on the synthesis and yield of fatty amine-coated iron-platinum nanoparticles.</a> Nanoscale Research Letters. 9 (2014) 306. <br>
+        </p>
+        <p><span class="special_word">Robert M. Taylor</span> and Laurel O. Sillerud.  <a class="paper_link" href="publications/Taylor_IntJNanoMed_2012.pdf" target="new">Paclitaxel-loaded iron platinum stealth immunomicelles are potent magnetic resonance imaging agents that prevent prostate cancer growth in a PSMA-dependent manner.</a>  International Journal of Nanomedicine. 7 (2012) 4341-4352.
+        </p>
+        <p><span class="special_word">Robert M. Taylor</span>, Dale L. Huber, Todd C. Monson, Victor Esch, and Laurel O. Sillerud.  <a class="paper_link" href="publications/Taylor_JVSTB_2012.pdf" target="new">Structural and magnetic characterization of superparamagnetic iron platinum nanoparticle contrast agents for magnetic resonance imaging.</a>  Journal of Vacuum Science and Technology B.  32 (2011) 2C101-2C1016<br>
+        </p>
+        <p><span class="special_word">Robert M. Taylor</span>, Virginia Severns, David C. Brown, Marco Bisoffi, and Laurel O. Sillerud.  <a class="paper_link" href="publications/Taylor_Prostate_2011_Epub.pdf" target="new">Prostate cancer targeting motifs:  expression of ανβ3, Neutotensin Receptor 1, Prostate Specific Membrane Antigen, and Prostate Stem Cell Antigen in human prostate cancer cell lines and xenografts.</a>  The Prostate. 72 (2011) 523-532. <br>
+        </p>
+        <p><span class="special_word">Robert M. Taylor</span>, Dale L. Huber, Todd C. Monson, Abdul-Mehdi S. Ali, Marco Bisoffi, and Laurel O. Sillerud. <a class="paper_link" href="publications/Taylor_JNanoRes_2011.pdf" target="new">Multifunctional iron platinum stealth immunomicelles:  targeted detection of human prostate cancer cells using both fluorescence and magnetic resonance imaging.</a>  Journal of Nanoparticle Research. 13 (2011) 4717-4729.<br>
+        </p>
+        <p>Sébastien Brier, Giovanna Maria, Vincenzo Carginale, Antonio Capasso, Yan Wu, <span class="special_word">Robert M. Taylor</span>, Nicholas B. Borotto, Clemente Capasso, and John R. Engen.  <a class="paper_link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2533623/pdf/nihms54020.pdf" target="new">Purification and characterization of pepsins A1 and A2 from the Antarctic rock cod Trematomus bernacchii.</a>  FEBS Journal 274 (2007) 6152–6166. <br>
+        </p>
+        <br>
+        <p># These authors contributed equally to the work.</p>
 
 </div>
 

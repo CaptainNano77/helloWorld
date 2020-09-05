@@ -2,6 +2,71 @@
 <html>
 
 <style>
+    
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;  
+    top: 32%;
+    min-width: 100%;
+    min-height: 100%; 
+}
+
+.box{
+        position: flex;
+        display: inline-block; /* Make the width of box same as image */
+    }
+    .box .text{
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: -70%;
+        right: 0;
+        top: 30%; /* Adjust this value to move the positioned div up and down */
+        text-align: center;
+        width: 100%; /*Set the width of the positioned div */
+    }
+    .box .text2{
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: -71%;
+        right: 0;
+        top: 58%;
+        text-align: center;
+        width: 100%;
+    }
+    .box .text3{
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: -70%;
+        right: 0;
+        top: 79%;
+        text-align: center;
+        width: 100%;
+    }
+    .box .text4{
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: -25%;
+        right: 0;
+        top: 125%;
+        text-align: center;
+        width: 100%;
+    }
+    .box .text5{
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: -25%;
+        right: 0;
+        top: 140%;
+        text-align: center;
+        width: 100%;
+    }
+
 .heading_top {
     color: #efffff;
     background-color: #444444;
@@ -128,6 +193,7 @@ body {
     /* position: center; */
     text-decoration: none; 
 }
+
 </style>
 
 <head>
@@ -172,23 +238,31 @@ body {
 </div> -->
 
 <!-- IMAGES -->
-<div>
-    <img class="microscopy_image" src="images/Picture1.png" alt='Fluorescent Microscopy Image'>
-</div>
 
-<div>
-    <img class="gluScatter_image" src="images/glucoseScatter2.png" alt='glucose Scatterplot'>
-</div>
+<div class="box">
+    <video autoplay muted loop id="myVideo">
+        <source src="lncap_1Z.mp4" type="video/mp4">
+    </video>
 
-<div>
-    <img class="venn_image" src="images/Venn.png">
-</div>
+    <div class="text">
+        <img class="microscopy_image" src="images/Picture1.png" alt='Fluorescent Microscopy Image'>
+    </div>
 
+    <div class="text2">
+        <img class="gluScatter_image" src="images/glucoseScatter2.png" alt='glucose Scatterplot'>
+    </div>
 
-<div>
+    <div class="text3">
+        <img class="venn_image" src="images/Venn.png">
+    </div>
 
-    <img class="resume_image1" src="images/Resume_RMTaylor_200831_Page_1.jpg" alt="resume page1">
-    <img class="resume_image2" src="images/Resume_RMTaylor_200831_Page_2.jpg" alt="resume page2">
+    <div class="text4">
+        <img class="resume_image1" src="images/Resume_RMTaylor_200831_Page_1.jpg" alt="resume page1">
+    </div>
+
+    <div class="text5">
+        <img class="resume_image2" src="images/Resume_RMTaylor_200831_Page_2.jpg" alt="resume page2">
+    </div>
 </div>
 
 </body>
