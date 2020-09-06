@@ -2,19 +2,28 @@
 <html>
 
 <style>
-    
+
 #myVideo {
     position: fixed;
     right: 0;
-    bottom: 0;  
-    top: 32%;
-    min-width: 100%;
-    min-height: 100%; 
+    bottom: 0%;  
+    top: 6%;
+    min-width: 95%;
+    min-height: 95%; 
 }
 
 .box{
         position: flex;
         display: inline-block; /* Make the width of box same as image */
+    }
+    .box .image{
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 10%;
+        right: 0%;
+        top: 20%;
+        width: 190%;
     }
     .box .text{
         position: absolute;
@@ -68,13 +77,12 @@
     }
 
 .heading_top {
-    color: white;
-    background-color: #444444; 
-    border: 3px solid white;
-    border-radius: 10px;
-    margin: 1px;
+    color: black;
+    background-color: white; 
+    background-size:cover;
     text-align: center;
-    position: relative;
+    position: fixed;
+    display:none;
     padding: 0.3%;
 }
 
@@ -82,7 +90,12 @@
     display: flex;
     justify-content: space-around;
     background-color: black;
-    margin-top: 5px;
+    margin-bottom: 5px;
+    overflow:hidden;
+    position: fixed;
+    width: 100%;
+    z-index: 3000;
+    padding: 1%;
 }
 
 .top_left_image {
@@ -98,67 +111,223 @@
 }
 
 .microscopy_image {
-    width: 350px;
-    border-color: darkblue;
-    border: 2px solid blue;
-    border-radius: 10px;
-    margin-top: 12px;
-    left: 5px;
+    width: 150px;
+    /* border: 2px solid white; */
+    /* border-radius: 10px; */
+    position: absolute;
+    margin-top: 2250px;
+    left: 50px;
 }
 
 .gluScatter_image {
     width: 350px;
-    background-color: white;
-    border-color: darkblue;
+    /* background-color: white; */
+    /* border-color: darkblue;
     border: 2px solid blue;
-    border-radius: 10px;
-    margin-top: 5px;
+    border-radius: 10px; */
+    margin-top: 2640px;
     left: 5px;
     position:relative;
 }
 
 .venn_image {
     width: 350px;
-    background-color: white;
+    /* background-color: white;
     border-color: darkblue;
-    border: 2px solid blue;
-    border-radius: 10px;
-    margin-top: 5px;
-    left: 5px;
-    position=absolute;
+    border: 2px solid blue; */
+    /* border-radius: 10px; */
+    margin-top: 2252px;
+    left: 820px;
+    position:absolute;
 }
-
+.hm_image {
+    /* background-color: white; */
+    border-color: darkblue;
+    border: 2px solid blue; */
+    /* border-radius: 10px; */
+    margin-top: 0px;
+    left: 5px;
+    position:absolute;
+    
+}
 .exosome_image {
     width: 350px;
-    background-color: white;
+    /* background-color: white;
     border-color: darkblue;
     border: 2px solid blue;
-    border-radius: 10px;
-    margin-top: 5px;
+    border-radius: 10px; */
+    margin-top: -4%;
     left: 5px;
-    position=absolute;
+    position:absolute;
 }
 
+.magnet_image {
+    width: 40%;
+    /* background-color: white;
+    border-color: darkblue;
+    border: 2px solid blue;
+    border-radius: 10px; */
+    margin-top: 25%;
+    left: 5px;
+    position:absolute;
+}
+
+.ftir_image {
+    width: 350px;
+    /* background-color: white;
+    border-color: darkblue;
+    border: 2px solid blue;
+    border-radius: 10px; */
+    margin-top: -13%;
+    left: 78%;
+    position:absolute;
+}
+
+.mri_image {
+    width: 350px;
+    /* background-color: white;
+    border-color: darkblue;
+    border: 2px solid blue;
+    border-radius: 10px; */
+    margin-top: -16%;
+    left: 55%;
+    position:absolute;
+}
+
+.characterBig_image {
+    width: 5%;
+    /* background-color: white;
+    border-color: darkblue;
+    border: 2px solid blue;
+    border-radius: 10px; */
+    margin-top: 4%;
+    left: 60%;
+    position:absolute;
+}
+
+.mRNA_image {
+    width: 5%;
+    /* background-color: white;
+    border-color: darkblue;
+    border: 2px solid blue;
+    border-radius: 10px; */
+    margin-top: 38%;
+    left: 60%;
+    position:absolute;
+}
+.receptor_image {
+    width: 5%;
+    /* background-color: white;
+    border-color: darkblue;
+    border: 2px solid blue;
+    border-radius: 10px; */
+    margin-top: 4%;
+    left: 58%;
+    position:absolute;
+}
+.tem_image {
+    width: 5%;
+    /* background-color: white;
+    border-color: darkblue;
+    border: 2px solid blue;
+    border-radius: 10px; */
+    margin-top: 24%;
+    left: 33%;
+    position:absolute;
+}
+.tga2_image {
+    width: 5%;
+    /* background-color: white;
+    border-color: darkblue;
+    border: 2px solid blue;
+    border-radius: 10px; */
+    margin-top: 4%;
+    left: 60%;
+    position:absolute;
+}
+.micelle_image {
+    width: 5%;
+    /* background-color: white;
+    border-color: darkblue;
+    border: 2px solid blue;
+    border-radius: 10px; */
+    margin-top: 86%;
+    left: 60%;
+    position:absolute;
+}
+.invitro_image {
+    width: 5%;
+    /* background-color: white;
+    border-color: darkblue;
+    border: 2px solid blue;
+    border-radius: 10px; */
+    margin-top: 57%;
+    left: 40%;
+    position:absolute;
+}
+.dsc_image {
+    width: 5%;
+    /* background-color: white;
+    border-color: darkblue;
+    border: 2px solid blue;
+    border-radius: 10px; */
+    margin-top: 67%;
+    left: 0%;
+    position:absolute;
+}
+.ihc_image {
+    width: 5%;
+    /* background-color: white;
+    border-color: darkblue;
+    border: 2px solid blue;
+    border-radius: 10px; */
+    margin-top: 64%;
+    left: 60%;
+    position:absolute;
+}
+
+
 .resume_image1 {
-    max-width:600px;
-    /* margin: 1px; */
-    /* position: absolute; */
-    /* top:200px; */
-    margin-left: 370px;
-    margin-top: -688px;
-    /* right: 400px; */
-    border: 2px solid white;
-    border-radius: 10px;
+    width:5%;
+    margin-left: 41%;
+    margin-top: 2%;
 }
 
 .resume_image2 {
-    max-width:600px;
-    /* position: absolute;
-    top: 1000px;
-    right:400px; */
-    margin-left: 371px;
-    border: 2px solid white;
-    border-radius: 10px;
+    width:5%;
+    margin-left: 89%;
+    margin-top: -58.5%;
+}
+
+.cv_image1 {
+    width:5%;
+    margin-left: 41%;
+    margin-top: 2%;
+}
+.cv_image2 {
+    width:5%;
+    margin-left: 89%;
+    margin-top: -58.5%;
+}
+.cv_image3 {
+    width:5%;
+    margin-left: 41%;
+    margin-top: 2%;
+}
+.cv_image4 {
+    width:5%;
+    margin-left: 89%;
+    margin-top: -58.5%;
+}
+.cv_image5 {
+    width:5%;
+    margin-left: 41%;
+    margin-top: 2%;
+}
+.cv_image6 {
+    width:5%;
+    margin-left: 89%;
+    margin-top: -58.5%;
 }
 
 .centered {
@@ -193,6 +362,8 @@ body {
     font-size: 30px;
     /* position: center; */
     text-decoration: none; 
+    float: left;
+    display:block;
 }
 
 .opening {
@@ -201,33 +372,146 @@ body {
     text-shadow: 1px 1px blue;
     font-family:Georgia;
     margin-left: 40%;
-    margin-top: 4%;
+    margin-top: 1%;
     width: 75%;
 }
 
-.statement {
-    font-size: 45px;
+
+.pub {
+    font-size: 20px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px blue;
+    font-family: Georgia;
+    margin-left: 40%;
+    margin-top: 0%;
+    text-align: justify;
+    width: 90%;
+    
+
+}
+
+#About {
+    font-size: 50px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px blue;
+    font-family: Georgia;
+    margin-left: 68%;
+    margin-top: 30%;
+    text-align: center;
+    /* width: 705; */
+}
+
+.statement1 {
+    font-size: 40px;
     color: #FFFFFF;
     text-shadow: 1px 1px blue;
     font-family: Georgia;
     margin-left: 50%;
-    margin-top: 6%;
-    text-align: justify;
+    margin-top: 9%;
+    /* text-align: justify; */
     width: 70%;
 }
 
-.skills {
+.statement2 {
     font-size: 35px;
     color: #FFFFFF;
     text-shadow: 1px 1px blue;
     font-family: Georgia;
+    margin-left: 35%;
+    margin-top: 3%;
+    /* text-align: left; */
+    width: 100%;
+}
+.skills {
+    font-size: 25px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px blue;
+    font-family: Georgia;
     margin-left: 50%;
-    margin-top: 10%;
+    margin-top: 0%;
     text-align: center;
     width: 70%;
 }
 
+#dataGallery {
+    font-size: 50px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px blue;
+    font-family: Georgia;
+    margin-left: 68%;
+    margin-top: 20%;
+    text-align: center;
+    /* width: 705; */
+}
 
+#publications {
+    font-size: 50px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px blue;
+    font-family: Georgia;
+    margin-left: 40%;
+    margin-top: 165%;
+    text-align: center;
+    width: 90%;
+    /* width: 705; */
+}
+
+#resume {
+    font-size: 50px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px blue;
+    font-family: Georgia;
+    margin-left: 40%;
+    margin-top: 5%;
+    text-align: center;
+    width: 90%;  
+}
+
+#cv {
+    font-size: 50px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px blue;
+    font-family: Georgia;
+    margin-left: 40%;
+    margin-top: 0%;
+    text-align: center;
+    width: 90%;  
+}
+#home {
+    font-size: 50px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px blue;
+    font-family: Georgia;
+    margin-left: 40%;
+    margin-top: 0%;
+    text-align: center;
+    width: 90%;  
+}
+#contact {
+    font-size: 50px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px blue;
+    font-family: Georgia;
+    margin-left: 40%;
+    margin-top: 0%;
+    text-align: center;
+    width: 90%;  
+}
+
+
+.special_word {
+    color: #27AE60;
+}
+
+.paper_link {
+    font-family: -apple-system;
+    color: #85929E;
+    font-size: 20px;
+}
+
+/* #dataGallery {
+
+} */
 </style>
 
 <head>
@@ -239,7 +523,7 @@ body {
     <img class="top_left_image" src="images/46737856.png" 
     alt="Picture of Dr. Taylor">
 
-    <h2 style="text-shadow: 2px 2px blue">
+    <h2>
         Robert M. Taylor, PhD<br/>
         Scientist | Analyst | Writer | Coder<br/>
         nano77nm@gmail.com<br/>
@@ -248,17 +532,19 @@ body {
 </div>
 
 <div class="link_heading">
-        <a class="link" style="text-shadow: 2px 2px blue" href="index.html">Home</a>
-        <a class="link" style="text-shadow: 2px 2px blue" href="resume.html">Resume</a>
+        <a class="link" style="text-shadow: 2px 2px blue" href="#About">Robert M. Taylor, PhD</a>
+        <a class="link" style="text-shadow: 2px 2px blue" href="#home">Home</a>
+        <a class="link" style="text-shadow: 2px 2px blue" href="#dataGallery">Data Gallery</a>
         <a class="link" style="text-shadow: 2px 2px blue" href="https://www.linkedin.com/in/robert-m-taylor-ph-d-7a37b813/" target="new">Linkedin</a> 
         <a class="link" style="text-shadow: 2px 2px blue" href="https://github.com/CaptainNano77" target="new">github</a>
-        <a class="link" style="text-shadow: 2px 2px blue" href="https://www.researchgate.net/profile/Robert_Taylor13#" target="new">ResearchGate</a>
-        <a class="link" style="text-shadow: 2px 2px blue" href="">Data</a>
-        <a class="link" style="text-shadow: 2px 2px blue" href="publications_page.html">Publications</a>
+        <a class="link" style="text-shadow: 2px 2px blue" href="#resume">Resume</a>
+        <a class="link" style="text-shadow: 2px 2px blue" href="#cv">CV</a>
+        <a class="link" style="text-shadow: 2px 2px blue" href="#publications">Publications</a>
+        <a class="link" style="text-shadow: 2px 2px blue" href="#contact">Contact</a>
 </div>
 
 
-<div class="box">
+<div id="home" class="box">
     <video preloade="auto" autoplay muted loop id="myVideo">
         <source src="lncap_1Z.mp4" type="video/mp4">
     </video>
@@ -266,28 +552,197 @@ body {
     <div class="text">
         <div class="opening" style="text-shadow: 2px 2px blue">
             Science, Analytics, and Innovation
-        </div>>
+        </div>
 
-        <div class="statement" style="text-shadow: 2px 2px blue">
-                Strength in research, data analysis, and scientific writing backed by training in biomedical, clinical, and data sciences.
+        <div class="statement1" style="text-shadow: 2px 2px blue">
+                Innovating Biomedical, Clinical, and Data Science Solutions by Utilizing Strengths in Research, Data Analysis, Scientific Writing, and Programming.
+        </div>
+
+        <div id="About" style="text-shadow: 2px 2px blue">
+            <br>
+            <br>
+           About  
+            <br>
+        </div>
+
+        <div class="statement2" style="text-shadow: 2px 2px blue">
+                Author of 11 Peer-reviewed Publications, 3 Pending Patents, and a Confident Public Speaker.
         </div>
 
         <div class="skills" style="text-shadow: 2px 2px blue">
-            Innovation of Biomedical and Clinical Science Solutions<br>
+            <br>
+            <br>
+            <span style="text-decoration:underline">What I Can Provide:</span><br>
             Research and Development<br>
             Data Analysis<br>
-            Author of 11 peer-reviewed publications<br>
-            3 Pending Patents<br>
-            Seasoned Public Speaker<br>
-            Human Study Management and Regulatory Compliance<br>
+            Machine Learning<br>
+            Cloud Services (GCP, Azure)<br>
             Study Protocol Design, Submissions, and Management<br>
+            Human Study Management and Regulatory Compliance<br>
+            Nanotechnology and Nanoparticle Expertise<br>
+            3D-printing Expertise <br>
+            Molecular Biology Expertise <br>
+            Technical and Regulatory Writing<br>
+            Programming in Python and R<br>
+            Skills using common libraries (pandas, numpy, scikit learn)<br>
+            Experience with Azure Machine Learning Studio.<br>
+        </div>
+        
+            
+
+        <div id="dataGallery" style="text-shadow: 2px 2px blue">
+            <br>
+            <br>
+            📈  Data Gallery  📉<br>
+            <br>
+        </div>
+
+        <div id="publications">
+            <br>
+            <br>
+            📚  PUBLICATIONS  📚
+            <br>
+        </div>
+        
+        <div class="pub">
+            <p><span class="special_word">Robert M. Taylor</span>, Dilendra Maharjan, Fernando Moreu, and Justin T Baca. <a class="paper_link" href="https://link.springer.com/content/pdf/10.1007/s00542-020-04758-0.pdf" target="new">Parametric Study of 3D Printed Microneedle (MN) Holders for Interstitial Fluid (ISF) Extraction.</a> Microsystem Technologies. https://doi.org/10.1007/s00542-020-04758-0 (2020).
+            </p>
+            <p>Philip R Miller#, <span class="special_word">Robert M. Taylor#</span>, Bao Tran, Trevor Glaros, Victor H Chavez, Raga Krishnakumar, Anupama Sinha, Kunal Poorey, Kelly P. Williams, Steven S. Branda, Justin T. Baca, and Ronen Polsky. <a class="paper_link" href="publications/CommBio_2019.pdf" target="new">Extraction and biomolecular analysis of dermal interstitial fluid collected with hollow microneedles.</a> Communications Biology 1, 173 (2018).<br>
+           </p>
+           <p><span class="special_word">Robert M. Taylor</span>, Philip R Miller, Parwana Ebrahimi, Ronen Polsky, and Justin T. Baca. <a class="paper_link" href="publications/Taylor_LabAnimals_2018.pdf" target="new">Minimally-Invasive Microneedle Array-Extraction of Interstitial Fluid for Comprehensive Biomedical Applications Including Transcriptomics, Proteomics, Metabolomics, Exosome Research, and Biomarker Identification.</a> Laboratory Animals. (2018)
+           </p>
+           <p>Bao Quoc Tran, Philip Miller, <span class="special_word">Robert M. Taylor</span>, Gabrielle Boyd, C. Nicole Rosenzweig, Justin T. Baca, Ronen Polsky, and Trevor Glaros. <a class="paper_link" href="publications/Tran_JProteomeRes_2018.pdf" target="new">Proteomic Characterization of Dermal Interstitial Fluid Extracted Using a Novel Microneedle-Assisted Technique.</a> Journal of Proteome Research. 17(1). (2017). <br>
+           </p>
+           <p>Joseph M. Pomo, <span class="special_word">Robert M. Taylor</span>, and Rama R. Gullapalli. Culturing 3-D <a class="paper_link" href="publications/Pomo_CancerCellInt_2016.pdf" target="new">Hepatocellular Cancer Spheroids to Analyze Cancer Cell Growth Mechanics. Cancer Cell International.</a> 16:44 (2016) <br>
+           </p> 
+           <p> <span class="special_word">Robert M. Taylor</span>, Todd C. Monson, and Rama R. Gullapalli. <a class="paper_link" href="publications/Taylor_NanoResLetter_2014.pdf" target="new">Influence of carbon chain length on the synthesis and yield of fatty amine-coated iron-platinum nanoparticles.</a> Nanoscale Research Letters. 9 (2014) 306. <br>
+           </p>
+           <p><span class="special_word">Robert M. Taylor</span> and Laurel O. Sillerud.  <a class="paper_link" href="publications/Taylor_IntJNanoMed_2012.pdf" target="new">Paclitaxel-loaded iron platinum stealth immunomicelles are potent magnetic resonance imaging agents that prevent prostate cancer growth in a PSMA-dependent manner.</a>  International Journal of Nanomedicine. 7 (2012) 4341-4352.
+           </p>
+           <p><span class="special_word">Robert M. Taylor</span>, Dale L. Huber, Todd C. Monson, Victor Esch, and Laurel O. Sillerud.  <a class="paper_link" href="publications/Taylor_JVSTB_2012.pdf" target="new">Structural and magnetic characterization of superparamagnetic iron platinum nanoparticle contrast agents for magnetic resonance imaging.</a>  Journal of Vacuum Science and Technology B.  32 (2011) 2C101-2C1016<br>
+           </p>
+           <p><span class="special_word">Robert M. Taylor</span>, Virginia Severns, David C. Brown, Marco Bisoffi, and Laurel O. Sillerud.  <a class="paper_link" href="publications/Taylor_Prostate_2011_Epub.pdf" target="new">Prostate cancer targeting motifs:  expression of ανβ3, Neutotensin Receptor 1, Prostate Specific Membrane Antigen, and Prostate Stem Cell Antigen in human prostate cancer cell lines and xenografts.</a>  The Prostate. 72 (2011) 523-532. <br>
+           </p>
+           <p><span class="special_word">Robert M. Taylor</span>, Dale L. Huber, Todd C. Monson, Abdul-Mehdi S. Ali, Marco Bisoffi, and Laurel O. Sillerud. <a class="paper_link" href="publications/Taylor_JNanoRes_2011.pdf" target="new">Multifunctional iron platinum stealth immunomicelles:  targeted detection of human prostate cancer cells using both fluorescence and magnetic resonance imaging.</a>  Journal of Nanoparticle Research. 13 (2011) 4717-4729.<br>
+           </p>
+           <p>Sébastien Brier, Giovanna Maria, Vincenzo Carginale, Antonio Capasso, Yan Wu, <span class="special_word">Robert M. Taylor</span>, Nicholas B. Borotto, Clemente Capasso, and John R. Engen.  <a class="paper_link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2533623/pdf/nihms54020.pdf" target="new">Purification and characterization of pepsins A1 and A2 from the Antarctic rock cod Trematomus bernacchii.</a>  FEBS Journal 274 (2007) 6152–6166. <br>
+           </p>
+           <br>
+           <p># These authors contributed equally to the work.</p>
+    
+        </div>
+
+        <div id="resume">
+            <br>
+            <br>
+            🗃   Resume   🗃
+            <br>
+        </div>
+
+        <div class="resume_image1">
+            <img style="width: 900%" src="images/Resume_RMTaylor_200831_Page_1.jpg">
+        </div>
+        <div class="resume_image2">
+            <img style="width: 900%" src="images/Resume_RMTaylor_200831_Page_2.jpg">
+        </div>
+
+        <div id="cv">
+            <br>
+            <br>
+            🗃   Curriculum vitae   🗃
+            <br>
+        </div>
+
+        <div class="cv_image1">
+            <img style="width: 900%" src="images/cv_page1.png">
+        </div>
+        <div class="cv_image2">
+            <img style="width: 900%" src="images/cv_page2.png">
+        </div>
+        <div class="cv_image3">
+            <img style="width: 900%" src="images/cv_page3.png">
+        </div>
+        <div class="cv_image4">
+            <img style="width: 900%" src="images/cv_page4.png">
+        </div>
+        <div class="cv_image5">
+            <img style="width: 900%" src="images/cv_page5.png">
+        </div>
+        <div class="cv_image6">
+            <img style="width: 900%" src="images/cv_page6.png">
+        </div>
+
+        <div id="contact">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            Contact<br>
+            <br>
+            <br>
+            nano77nm@gmail.com
             <br>
             <br>
             <br>
             <br>
             <br>
         </div>
+
+    </div>
+
+
+
+<div class="microscopy_image">
+    <img src="images/Picture1.png">
 </div>
+<div class="venn_image">
+    <img src="images/Venn.png">
+</div>
+<div class="gluScatter_image">
+    <img style="width: 200%" src="images/glucoseScatter2.png">
+</div>
+<div class="exosome_image">
+    <img src="images/exosomes.png">
+</div>
+<div class="magnet_image">
+    <img style="width: 80%" src="images/Magnetization.png">
+</div>
+<div class="ftir_image">
+    <img style="width: 80%" src="images/FTIR.png">
+</div>
+<div class="mri_image">
+    <img style="width: 90%" src="images/MRI.png">
+</div>
+<div class="mRNA_image">
+    <img style="width: 800%" src="images/mrnaProteinExpression.png">
+</div>
+<div class="receptor_image">
+    <img style="width: 800%" src="images/receptorSignatures.png">
+</div>
+<div class="tem_image">
+    <img style="width: 500%" src="images/TEM.png">
+</div>
+<div class="tga2_image">
+    <img style="width: 800%" src="images/TGA2.png">
+</div>
+<div class="micelle_image">
+    <img style="width: 800%" src="images/micelleAndDLS.png">
+</div>
+<div class="invitro_image">
+    <img style="width: 400%" src="images/inVitroRelaxivity.png">
+</div>
+<div class="ihc_image">
+    <img style="width: 800%" src="images/IHC.png">
+</div>
+<div class="dsc_image">
+    <img style="width: 800%" src="images/DSC.png">
+</div>
+
+
+
 
 </body>
 </html>
+
